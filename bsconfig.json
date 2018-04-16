@@ -4,17 +4,15 @@
   an issue! */
 {
   "name": "repong",
-  "reason": {"react-jsx" : 2},
   "sources": [
     "src"
   ],
   "package-specs": [{
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   }],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": [
-  ],
+  "bs-dependencies": ["bs-webapi"],
   "refmt": 3
 }

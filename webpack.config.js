@@ -6,4 +6,7 @@ module.exports = {
     path: path.join(__dirname, "build"),
     filename: 'index.js',
   },
+  optimization: {
+    minimize: false
+  },
 };
