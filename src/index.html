@@ -6,14 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>REPong</title>
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+    }
+    main {
+      flex-direction: column;
+      display: flex;
+      align-self: center;
+      border: 1px solid white;
+      margin: 40px;
+      padding: 40px;
+    }
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
     #game {
-      border: 1px solid black
+      flex: 0;
+      border: 1px solid white;
+      align-self: center;
     }
   </style>
 </head>
 
 <body>
-  <canvas id="game"></canvas>
+  <main>
+    <h1>REPong</h1>
+    <p>An experimental rough Pong, to play with ReasonML and Canvas</p>
+    <canvas id="game"></canvas>
+  </main>
   <script src="../build/index.js"></script>
 </body>
 
