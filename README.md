@@ -3,6 +3,7 @@ I built this project to play a bit with ReasonML =)
 
 The main reducers loop is directly inspired by this cool workshop =>     https://github.com/js-republic/reason-ml-workshop
 
+Here's you can play: https://keen-lovelace-01378a.netlify.com/  (very simplistic and mono player for now)
 
 Run this project:
 
