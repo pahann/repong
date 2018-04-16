@@ -18,6 +18,7 @@ After you see the webpack compilation succeed (the `npm run webpack` step), open
 
 **For more elaborate ReasonReact examples**, please see https://github.com/reasonml-community/reason-react-example
 
+![Screenshot](https://github.com/pahann/repong/raw/master/screenshot.png)
 
 ## Roadmap:
 - [x] Basic pong with a single player
