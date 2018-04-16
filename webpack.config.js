@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/Main.bs.js',
@@ -9,4 +10,9 @@ module.exports = {
   optimization: {
     minimize: false
   },
+  plugins: [
+    new CopyWebpackPlugin([
+        { from: 'public' }
+    ])
+  ]
 };
