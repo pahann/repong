@@ -1,9 +1,9 @@
 # REPong
 I built this project to play a bit with ReasonML =)
 
-The main reducers loop is directly inspired by this cool workshop =>     https://github.com/js-republic/reason-ml-workshop
+The main reducers loop is directly inspired by this cool workshop => https://github.com/js-republic/reason-ml-workshop
 
-Here's you can play: https://keen-lovelace-01378a.netlify.com/  (very simplistic and mono player for now)
+Here's you can play: https://keen-lovelace-01378a.netlify.com/  (mono player for now)
 
 Run this project:
 
@@ -14,7 +14,7 @@ npm start
 npm run webpack
 ```
 
-After you see the webpack compilation succeed (the `npm run webpack` step), open up the nested html files in `build/*` (**no server needed!**). Then modify whichever file in `src` and refresh the page to see the changes.
+After you see the webpack compilation succeed (the `npm run webpack` step), open up the nested html files in `build/index.html` (**no server needed!**). Then modify whichever file in `src` and refresh the page to see the changes.
 
 **For more elaborate ReasonReact examples**, please see https://github.com/reasonml-community/reason-react-example
 
