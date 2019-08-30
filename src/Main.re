@@ -1,4 +1,3 @@
-open Webapi.Dom;
 open Store;
 
 let rec onFrame = (ctx, _) => {

@@ -7,13 +7,11 @@ let gameWidth = 600.;
 let gameHeight = 400.;
 let paddleThickness = 8.;
 let paddleWidth = 60.;
-let ballSize = 2.;
+let ballSize = 3.;
 
 let store: storeType(Types.rootState) = {
   actions: [],
-  /* "rootState" état global du système de type Types.rootState */
   state:
-    /* "screen" définie l'état de l'écran (pas utile pour vous) de type Types.screenState */
     {
       screen: {
         width: gameWidth,
@@ -46,14 +44,13 @@ let store: storeType(Types.rootState) = {
 let applyReducers = () : unit => {
   store.state =
     List.fold_left(
-      (state: Types.rootState, action) => { /* Why bad inference in this state case ? */
-        let preState = Game_Reducer.preReducer(state, action);
+      (state: Types.rootState, action) => {
         let newState: Types.rootState = {
-          screen: Screen_reducer.reducer(preState.screen, action),
-          ball: Ball_reducer.reducer(preState.ball, action),
-          players: Players_reducer.reducer(preState.players, action)
+          screen: Screen_reducer.reducer(state.screen, action),
+          ball: Ball_reducer.reducer(state.ball, action),
+          players: Players_reducer.reducer(state.players, action)
         };
-        newState;
+        Game_Reducer.postReducer(newState, action);
       },
       store.state,
       store.actions

@@ -23,6 +23,7 @@ type ballState = {
   size: float,
 };
 
+
 type screenState = {
   width: float,
   height: float,

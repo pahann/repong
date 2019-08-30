@@ -28,7 +28,7 @@ let drawBg = (ctx, state: Types.screenState) => {
   fillRect(ctx, ~x=0., ~y=0., ~w=state.width, ~h=state.height);
 
   beginPath(ctx);
-  ctx |> moveTo(~y=0., ~x=state.width /. 2.);
+  ctx |> moveTo(~y=-1., ~x=state.width /. 2.);
   ctx |> lineTo(~y=state.height, ~x=state.width /. 2.);
   stroke(ctx);
 };

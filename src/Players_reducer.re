@@ -10,7 +10,6 @@ let move = (player: Types.player, action: Actions.all) => {
       }
     | _ => player
   };
-  Js.log(newPlayer);
   newPlayer;
 };
 
